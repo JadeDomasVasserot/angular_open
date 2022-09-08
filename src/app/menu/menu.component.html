@@ -1,0 +1,25 @@
+<div class="nav">
+<img class="image" src="assets/logo.png">
+  <button mat-raised-button>Accueil</button>
+  <button mat-raised-button [matMenuTriggerFor]="belowMenu">Course</button>
+  <mat-menu #belowMenu="matMenu" yPosition="below">
+    <button mat-menu-item>Liste de course</button>
+  </mat-menu>
+
+  <button mat-raised-button [matMenuTriggerFor]="beforeMenu">Repas</button>
+  <mat-menu #beforeMenu="matMenu" xPosition="before">
+    <button mat-menu-item>Liste de repas</button>
+    <button mat-menu-item>Planning</button>
+  </mat-menu>
+  <button mat-raised-button [matMenuTriggerFor]="afterMenu">Ménage</button>
+  <mat-menu #afterMenu="matMenu" xPosition="after">
+    <button mat-menu-item>To Do Ménage</button>
+    <button mat-menu-item>Planning</button>
+  </mat-menu>
+  <button mat-raised-button [matMenuTriggerFor]="afterMenu">Essence</button>
+  <mat-menu #afterMenu="matMenu" xPosition="after">
+    <button mat-menu-item>Nombre de pleins</button>
+    <button mat-menu-item>Prix Essence</button>
+  </mat-menu>
+</div>
+

@@ -1,0 +1,17 @@
+<div>
+  <mat-card class="example-card">
+    <mat-card-header>
+      <mat-card-title>Mon calendrier</mat-card-title>
+      <mat-card-subtitle>Date sélectionnée : {{selected | date: "dd/MM/yy"}}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-calendar class="calendar-card" [(selected)]="selected"></mat-calendar>
+    <mat-card-content>
+      <p>
+        Taches
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button>En savoir +</button>
+    </mat-card-actions>
+  </mat-card>
+</div>
